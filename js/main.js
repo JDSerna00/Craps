@@ -33,18 +33,18 @@ function jugar() {
 
 
     if (resultado == 7 || resultado == 11) { 
-        textoResultado = textoResultado + 'Hey how lucky, you won';
-        textoResultado = `${Turno + turno} Hey how lucky, you won`;
+        // textoResultado = textoResultado + 'Hey how lucky, you won'; 
+        textoResultado += `Turno ${turno} Hey how lucky, you won`;
     }
 
     if (resultado == 2 || resultado == 3 || resultado == 12) {
-        textoResultado =  textoResultado + 'Shame buddy, you lost';
-        textoResultado = `${Turno + turno} Shame buddy, you lost`;
+        // textoResultado =  textoResultado + 'Shame buddy, you lost';
+        textoResultado += `Turno ${turno} Shame buddy, you lost`;
     }
 
     if (resultado == 4 || resultado == 5 || resultado == 6 || resultado == 8 || resultado == 9 || resultado == 10) {
-        textoResultado = textoResultado + 'Congrats! You scored a point';
-        textoResultado = `${Turno + turno} Congrats! You scored a point`;
+        // textoResultado = textoResultado + 'Congrats! You scored a point';
+        textoResultado += `Turno ${turno} Congrats! You scored a point`;
     }
 
     document.getElementById('resultado').innerHTML = textoResultado;
