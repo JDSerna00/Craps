@@ -11,14 +11,24 @@
 
 <body>
     <div>
-        <h2 id="titulo">🎲 CRAPS 🎲</h2>
+        <h2 id="titulo">:game_die: CRAPS :game_die:</h2>
     </div>
     <div id="contenedor_dados">
         <div id="dado1" class="dado"></div>
         <div id="dado2" class="dado"></div>
     </div>
-    <button type="button" value="Tirar" id="boton_tirar" onclick="jugar()">tirar</button>
-    <div id="resultado">
+    <div class="centrarDiv" id="botones">
+        <button class="boton" type="button" value="Tirar" id="boton_tirar" onclick="jugar()">TIRAR</button>
+        <button class="boton" type="button" value="Reiniciar" id="boton_reiniciar" onclick="reiniciar()">REINICIAR</button>
+    </div>
+    <div class="centrarDiv">
+        <h3>
+            <div>Punto actual</div>
+            <div id="puntos"></div>
+        </h3>
+    </div>
+    <div class="centrarDiv">
+        <h1 id="resultado"></h1>
     </div>
     <a href="creditos.html">Ir a créditos</a>
 </body>

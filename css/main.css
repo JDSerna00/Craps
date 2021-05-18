@@ -1,40 +1,49 @@
 body{
-    background-image: url(casino2.jpg); 
+    background-image: url(casino2.jpg);
 }
 
 .dado{
-    background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
-    background-position:-803px;
-    width:157px;
-    height:470px;
+    background-image: url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
+    background-position: -803px;
+    width: 157px;
+    height: 470px;
+}
+
+.boton {
+    width: 120px;
+    height: 60px;
+    margin: 5px;
+    background-color: #A62E2E;
+    color: #F2D857;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: fantasy; 
+    font-size: larger;
+}
+
+.boton:disabled {
+    background-color:#bd5e5e;
+    color:#fdefa7;
+}
+
+.centrarDiv {
+    display: flex;
+    justify-content: center;
 }
 
 #contenedor_dados{
-    display:flex;
+    display: flex;
     width: 320px;
-    margin:0 auto;
-}
-
-#boton_tirar{
-    display:block;
-    width:100px;
-    height:60px;
-    margin:-100px auto;
-    background-color:#A62E2E;
-    color:#F2D857;
-    border:0;
-    border-radius:40px;
-    cursor:pointer;
-    font-family: fantasy; 
-    font-size: larger;
+    margin: 0 auto;
 }
 
 #resultado {
     color: rgba(0, 5, 5, 0.678);
     font-size: 20px;
-    display:flex;
-    width:250px;
-    margin:0 auto;
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
 }
 
 #titulo {
@@ -42,6 +51,5 @@ body{
     display: flex;
     width: 700px;
     margin: 0px;
-
-
+    font-family: fantasy;
 }
